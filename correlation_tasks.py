@@ -42,7 +42,7 @@ def analyze_brain_correlations(data: BrainDataInput) -> BrainCorrelationSummary:
             max_pearson_prm = key
 
     return BrainCorrelationSummary(
-        len(men_df), len(women_df), men_pearson, women_pearson, max_pearson_prm
+        len(men_df), len(women_df), women_pearson, men_pearson, max_pearson_prm
     )
 
 
